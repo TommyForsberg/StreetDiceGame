@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <Title>Street Dice By Tommy Forsberg</Title>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+    <div id="gameContent">
+        <table class="top">
+            <tr>
+
+                <th>
+                    <div id="roundCount">Round: 1</div>
+                    <div class="box">STREET CRAPS</div>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div id="recordBox">RECORD: </div>
+                    <div id="winPoints">WALLET:</div><br><div id="bets">BETS:</div>
+                </td>
+            </tr>
+
+        </table>
+        <table class="center">
+            <tr>
+
+                <th>
+                    <div id="goal">Roll Seven Out(7) or Yo-leven(11) to WIN! Roll Snake Eyes(1,1), Ace Deuce(1,2), or Midnight(6,6) to LOOSE!</div><div id="roundGoal">Seven Out   Yo-leven</div>
+                </th>
+            </tr>
+        </table>
+
+        <div id="die">
+            <div id="typeOfRoll">BET & ROLL!</div>
+            <table class="center">
+
+                <tr>
+                    <td><div id="dice1" class="dice"><img src="img/dice/1c.gif" height="57"></div></td>
+                    <td><div id="dice2" class="dice"><img src="img/dice/1c.gif" height="57"></div></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="Roll Dice!" onclick="game()" ;>
+                        
+                    <td>
+                        <input type="button" value="Bet!" onclick="makeBet()" ;>
+                        <input type="button" value="Cash In" onclick="cashIn()" ;>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="Pickpocket" onclick="pickPocket()" ;>
+
+                    </td>
+                    <td><input type="button" value="Rules" onclick="location.href='#openRules'" ;></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+    <div id="openRules" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Rules</h2>
+
+            <p>
+                First roll.<br>To win in the first round you either has to roll "Seven Out"(sum of seven) or "Yo-leven"(sum of eleven).
+                However if you roll "Snake Eyes", "Ace Deuce" or "Midnight" you loose instantly.
+            </p>
+            <p>
+                The following rolls.<br>
+                In case you don't hit any of the outs in the first round the game will continue. The goal for the following rounds is to hit
+                the number that you rolled in the first round. For example if you hit 9 you will have to hit 9 again. However if you roll
+                "Seven Out"(sum of seven), then you loose. The game continues until you either hit your target or the dreaded "Seven Out".
+            </p>
+            <p>
+                Bet.<br>
+                In case you win you will win your bet. In case you loose you loose your bet.
+            </p>
+            <p>
+                Pickpocket.<br>
+                You can try to steal a 'stick' if you're low on money. You have a 3/5 chance to succeed in your theft. In that case you win one stick.
+                If you fail, you're discovered so you will loose all of your sticks in bet and some of the sticks (0 -> total) in your wallet.
+            </p>
+
+        </div>
+    </div>
+</body>
+</html>
+<script src="script/app.js"></script>

@@ -1,0 +1,133 @@
+﻿
+
+table.top {
+    width: 100%;
+}
+
+#winPoints {
+    mix-blend-mode: multiply;
+    font-size: 28px;
+    font-family: "Lucida Console", Monaco, monospace;
+    transform: rotate(2deg);
+    line-height: 5px;
+}
+
+#bets {
+    mix-blend-mode: multiply;
+    font-size: 30px;
+    font-family: "Lucida Console", Monaco, monospace;
+    transform: rotate(1deg);
+    vertical-align: top;
+    line-height: 8px;
+}
+
+#roundGoal, h4 {
+    color: blue;
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow: -1px 0 white, 0 4px black, 3px 0 black, 0 -2px pink;
+}
+
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin: auto;
+    margin: 0 auto;
+    table-layout: fixed;
+}
+
+body {
+    background-image: url("../img/streetcraps.jpg");
+    background-repeat: no-repeat;
+    background-position: 30% 55%;
+    background-size: cover;
+    background-blend-mode: luminosity;
+}
+
+#goal {
+    color: white;
+}
+
+#roundCount {
+    transform: rotate(8deg);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border-radius: 25px;
+    padding: 15px;
+    color: PINK;
+    font-size: 40px;
+    background-color: white;
+    outline: #00FF00 dotted thick;
+    border: #666666 2px solid;
+    width: 180px;
+    margin: auto;
+}
+
+.box {
+    font-family: arial;
+    transform: rotate(-2deg);
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: red;
+    letter-spacing: 10px;
+    padding: 0px;
+}
+
+#die {
+    height: 80%;
+    text-align: center;
+}
+
+#typeOfRoll {
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    font-size: 50px;
+    color: green;
+}
+
+#recordBox {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    outline: red dotted thick;
+    width: 160px;
+    margin: auto;
+}
+
+
+
+.modalDialog {
+    overflow-y: auto;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+
+    .modalDialog:target {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .modalDialog > div {
+        width: 400px;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        border-radius: 10px;
+        background: #fff;
+        background: -moz-linear-gradient(#fff, #999);
+        background: -webkit-linear-gradient(#fff, #999);
+        background: -o-linear-gradient(#fff, #999);
+    }
